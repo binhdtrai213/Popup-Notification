@@ -1,5 +1,6 @@
 import messaging from '@react-native-firebase/messaging';
 
+// Request user accept to pop up a notification(on IOS)
 export const requestUserPermission = async () => {
   const authStatus = await messaging().requestPermission();
   const enabled =
